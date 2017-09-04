@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_XL"
+        style="@style/Oswald_BoldFont"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/title_arrival_date"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gap_XL"
+        android:layout_marginRight="@dimen/gap_L"
+        android:layout_marginTop="@dimen/gap_extreme"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/arrival_date"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txtArrivalDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_marginTop="@dimen/gap_S"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/gap_XL"
+        android:layout_marginRight="@dimen/gap_L"
+        android:layout_marginTop="@dimen/gap_XXL"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/departure_date"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/txtDepartureDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_marginTop="@dimen/gap_S"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_button_height"
+        android:layout_marginBottom="@dimen/gap_XXL"
+        android:layout_marginLeft="@dimen/gap_XXXL"
+        android:layout_marginRight="@dimen/gap_XXXL"
+        android:text="@string/btn_next"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/round_button_background_red"
+        android:clickable="true"/>
+</LinearLayout>

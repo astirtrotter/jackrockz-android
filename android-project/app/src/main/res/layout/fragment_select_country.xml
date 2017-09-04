@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_XL"
+        android:textSize="25sp"
+        style="@style/Oswald_BoldFont"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/title_country_selection"/>
+
+    <LinearLayout
+        android:id="@+id/btnGermany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_big"
+        android:paddingLeft="80dp"
+        android:paddingTop="@dimen/gap_M"
+        android:paddingBottom="@dimen/gap_M"
+        android:background="?android:attr/selectableItemBackground"
+        android:tag="de"
+        android:gravity="center_vertical"
+        android:clickable="true">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/flag_height"
+            android:layout_height="@dimen/flag_height"
+            android:src="@drawable/country_cell_flag_de"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Oswald_SemiBoldFont"
+            android:layout_marginLeft="@dimen/gap_XL"
+            android:text="Germany"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnFrance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_L"
+        android:paddingLeft="80dp"
+        android:paddingTop="@dimen/gap_M"
+        android:paddingBottom="@dimen/gap_M"
+        android:background="?android:attr/selectableItemBackground"
+        android:tag="fr"
+        android:gravity="center_vertical"
+        android:clickable="true">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/flag_height"
+            android:layout_height="@dimen/flag_height"
+            android:src="@drawable/country_cell_flag_fr"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Oswald_SemiBoldFont"
+            android:layout_marginLeft="@dimen/gap_XL"
+            android:text="France"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnItaly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_L"
+        android:paddingLeft="80dp"
+        android:paddingTop="@dimen/gap_M"
+        android:paddingBottom="@dimen/gap_M"
+        android:background="?android:attr/selectableItemBackground"
+        android:tag="it"
+        android:gravity="center_vertical"
+        android:clickable="true">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/flag_height"
+            android:layout_height="@dimen/flag_height"
+            android:src="@drawable/country_cell_flag_it"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_XL"
+            style="@style/Oswald_SemiBoldFont"
+            android:text="Italy"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnNetherlands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_L"
+        android:paddingLeft="80dp"
+        android:paddingTop="@dimen/gap_M"
+        android:paddingBottom="@dimen/gap_M"
+        android:background="?android:attr/selectableItemBackground"
+        android:tag="nl"
+        android:gravity="center_vertical"
+        android:clickable="true">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/flag_height"
+            android:layout_height="@dimen/flag_height"
+            android:src="@drawable/country_cell_flag_nl"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_XL"
+            style="@style/Oswald_SemiBoldFont"
+            android:text="Netherlands"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnOther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_L"
+        android:paddingLeft="80dp"
+        android:paddingTop="@dimen/gap_M"
+        android:paddingBottom="@dimen/gap_M"
+        android:background="?android:attr/selectableItemBackground"
+        android:tag="en"
+        android:gravity="center_vertical"
+        android:clickable="true">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/flag_height"
+            android:layout_height="@dimen/flag_height"
+            android:src="@drawable/country_cell_flag_en"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_XL"
+            style="@style/Oswald_SemiBoldFont"
+            android:text="Other"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Oswald_SemiBoldFont">
+        <item name="fontPath">fonts/oswald_semibold.ttf</item>
+    </style>
+    <style name="Oswald_BoldFont">
+        <item name="fontPath">fonts/oswald_bold.ttf</item>
+    </style>
+    <style name="Oswald_RegularFont">
+        <item name="fontPath">fonts/oswald_regular.ttf</item>
+    </style>
+
+</resources>

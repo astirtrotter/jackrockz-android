@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/loginLayout">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-60dp"
+            android:layout_marginLeft="-60dp"
+            android:src="@drawable/welcome_background1"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/trending_gradient_shape" />
+
+        <TextSwitcher
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/gap_super" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#fff"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_marginLeft="@dimen/gap_XXXL"
+            android:layout_marginRight="@dimen/gap_XXXL"
+            android:layout_marginTop="@dimen/gap_XL"
+            android:text="@string/facebook_button_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/round_button_background"
+            android:clickable="true"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/btnTakeLook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_marginLeft="@dimen/gap_XXXL"
+            android:layout_marginRight="@dimen/gap_XXXL"
+            android:layout_marginTop="@dimen/gap_M"
+            android:text="Take a Look"
+            android:textColor="@color/take_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/take_button_background"
+            android:clickable="true"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtLoginDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_M"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="11sp"
+            android:text="@string/login_description"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

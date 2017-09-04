@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_button_height">45dp</dimen>
+    <dimen name="gap_S">5dp</dimen>
+    <dimen name="gap_M">10dp</dimen>
+    <dimen name="gap_L">15dp</dimen>
+    <dimen name="gap_XL">20dp</dimen>
+    <dimen name="gap_XXL">30dp</dimen>
+    <dimen name="gap_XXXL">40dp</dimen>
+    <dimen name="gap_big">50dp</dimen>
+    <dimen name="gap_super">60dp</dimen>
+    <dimen name="gap_extreme">70dp</dimen>
+    <dimen name="flag_height">60dp</dimen>
+    <dimen name="font_size_login_description">10sp</dimen>
+</resources>

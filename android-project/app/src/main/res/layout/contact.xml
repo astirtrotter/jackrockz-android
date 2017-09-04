@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="@dimen/gap_M">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="1dp"
+        android:background="@drawable/round_layout_background"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gap_M"
+            android:textColor="#898989"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:text="Get in touch"/>
+        <View
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e8e8ea"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background_contact"
+            android:gravity="center"
+            android:padding="@dimen/gap_M"
+            android:textColor="#f81c4f"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:text="Phone"/>
+        <View
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e8e8ea"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background_contact"
+            android:gravity="center"
+            android:padding="@dimen/gap_M"
+            android:textStyle="bold"
+            android:textColor="#f81c4f"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:text="Email"/>
+        <View
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e8e8ea"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtWhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bottom_layout_background"
+            android:gravity="center"
+            android:padding="@dimen/gap_M"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#f81c4f"
+            android:clickable="true"
+            android:text="WhatsApp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_M"
+        android:background="@drawable/round_cancel_background"
+        android:gravity="center"
+        android:padding="@dimen/gap_M"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#f81c4f"
+        android:clickable="true"
+        android:text="Cancel"/>
+</LinearLayout>

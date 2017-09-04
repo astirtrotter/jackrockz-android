@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">JackRockz</string>
+    <string name="logo_text">Gives you friend discounts</string>
+    <string name="facebook_button_title">Login with Facebook</string>
+    <string name="title_country_selection">Where are you from?</string>
+    <string name="title_city_selection">Your Destination</string>
+    <string name="title_arrival_date">Let Jack know when you are\narriving and leaving</string>
+    <string name="arrival_date">Arrival Date</string>
+    <string name="departure_date">Departure Date</string>
+    <string name="btn_next">Next</string>
+    <string name="nav_events">Events</string>
+    <string name="nav_hot_events">Hot Events</string>
+    <string name="nav_my_tickets">My Tickets</string>
+    <string name="nav_support">Support</string>
+    <string name="nav_enter_ambassador_code">Enter Ambassador Code</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_login">Login with Facebook</string>
+    <string name="title_profile">John Appleseed</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_support">Jack is here to help you. Jack knows his\nsh*t. Whether you need more info about\nan event, are lost in the streets or just\nwant to tickle his beard…</string>
+    <string name="content_ambassador">Enter the code below that you have\nreceived from your Jack.</string>
+    <string name="hint_ambassador">You didn\'t meet a Jack? </string>
+    <string name="hint_call"><u>Call or message us!</u></string>
+    <string name="content_purchase">You will be redirected to the payment page where you\ncan securely perform the payment using iDeal, Creditcard\nor Paypal.</string>
+    <string name="alert_phone">A valid phone number is required in\norder to continue. Please enter a\nphone number and try again.</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item />
+        <item />
+        <item>My Tickets</item>
+        <item>Support</item>
+    </string-array>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="facebook_app_id">1034353110031704</string>
+    <string name="msg_facebook">Unfortunately facebook login failed.</string>
+    <string name="string_thank_you">Here\'s your ticket. Show this at the\ndoor when the event starts.\n\nThe ticket has been saved to \'My\nTickets\'.</string>
+    <string name="google_api_key">AIzaSyAxQ47BG5yQ3e-Hm07rbKXOuKO-ImZq6_s</string>
+    <string name="who_s_there">Who\'s there?</string>
+
+    <string name="onesignal_app_id">be500dd4–9384–4664–9a62–97c9be1af133</string>
+    <!--<string name="term_url">https://jrapp.us/terms_of_use.pdf</string>-->
+    <!--<string name="privacy_url">https://jrapp.us/privacy_statement.pdf</string>-->
+    <string name="login_description">By continuing you agree with our <a href="https://jrapp.us/terms_of_use.pdf">Terms of Use</a> and <a href="https://jrapp.us/privacy_statement.pdf">Privacy Statement</a></string>
+</resources>

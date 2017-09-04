@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/black</color>
+    <color name="colorPrimaryDark">@android:color/black</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorControlNormal">#fe3824</color>
+    <color name="colorControlNormalHighlight">#ff8275</color>
+    <color name="colorControlHighlight">#82d0ec</color>
+    <color name="hint_color">#868686</color>
+    <color name="divider_color">#e7e7e7</color>
+    <color name="rating_active_color">#000</color>
+    <color name="rating_inactive_color">#a4a4a4</color>
+    <color name="sold_out_color">#ff0000</color>
+    <color name="take_text">#fd3059</color>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item>
+        <ripple
+            android:color="@color/ripple_material_light"
+            tools:ignore="PrivateResource">
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="1000dp" />
+                    <stroke
+                        android:color="#fd97ac"
+                        android:width="1dp" />
+                    <solid android:color="#fff" />
+                </shape>
+            </item>
+
+        </ripple>
+    </item>
+</selector>

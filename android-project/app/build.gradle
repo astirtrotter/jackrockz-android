@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.jackrockz"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 7
+        versionName "0.9.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [onesignal_app_id: "be500dd4-9384-4664-9a62-97c9be1af133",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // Support library
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation 'com.android.support:recyclerview-v7:25.4.0'
+    implementation 'com.android.support:design:25.4.0'
+    implementation 'com.android.support:cardview-v7:25.4.0'
+    implementation 'com.android.support:customtabs:25.4.0'
+
+    // Picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    // RxJava & RxAndroid
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.0.0'
+    implementation 'com.android.support:support-v4:25.4.0'
+
+    // ActionSheet
+    implementation 'com.github.mancj:SlideUp-Android:2.2.5'
+
+    // GSON
+    implementation 'com.google.code.gson:gson:2.8.0'
+
+    // Facebook SDK
+    implementation 'com.facebook.android:facebook-android-sdk:4.23.0'
+
+    // Jackson Data
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.9'
+
+    // Custom Font
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    // CircleIndicator
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+
+    // Map
+    implementation 'com.google.android.gms:play-services-maps:10.0.1'
+
+    // Push Notification(OneSignal)
+    implementation 'com.onesignal:OneSignal:[3.5.3,4.0.0)'
+}

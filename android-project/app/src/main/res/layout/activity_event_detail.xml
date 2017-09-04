@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/image_slider"
+            android:layout_height="270dp"
+            android:layout_width="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gap_M">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtRegularPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_S"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/hint_color"
+                android:textSize="15sp"
+                android:text="€ 23,95"
+                style="@style/Oswald_BoldFont" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/txtRegularPrice"
+                android:text="Subtitle"
+                style="@style/Oswald_BoldFont"
+                android:textSize="20sp"
+                android:textColor="@color/hint_color" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/txtSubtitle"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:padding="3dp"
+                android:background="@drawable/round_text_background"
+                android:text="€ 14,95"
+                style="@style/Oswald_BoldFont" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSubtitle"
+                android:layout_toLeftOf="@id/txtPrice"
+                android:text="One Night Stand"
+                style="@style/Oswald_BoldFont"
+                android:textSize="25sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <include layout="@layout/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_M"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtGuestCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/gap_S"
+                    android:text="45x"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="23sp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/gap_S"
+                    android:textColor="#949494"
+                    android:text="SPOTS LEFT"
+                    android:textSize="15sp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider_color" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtViewsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/gap_S"
+                    android:text="104x"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="23sp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/gap_S"
+                    android:textColor="#949494"
+                    android:text="SEEN"
+                    android:textSize="15sp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider_color" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtExpCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/gap_S"
+                    android:text="12x"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="23sp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/gap_S"
+                    android:textColor="#949494"
+                    android:text="EXPERIENCED"
+                    android:textSize="15sp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider" />
+        <include layout="@layout/description"/>
+        <include
+            android:id="@+id/layout_who"
+            android:visibility="gone"
+            layout="@layout/who_layout"/>
+        <include
+            android:id="@+id/layout_review"
+            android:visibility="gone"
+            layout="@layout/review_layout"/>
+        <include layout="@layout/location"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/btnGet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_button_height"
+        android:layout_marginLeft="@dimen/gap_XXXL"
+        android:layout_marginRight="@dimen/gap_XXXL"
+        android:layout_marginBottom="@dimen/gap_M"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Get on guestlist"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/round_button_background_red"
+        android:clickable="true"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/nav_group1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_hot_events"
+            android:icon="@drawable/tabbar_featuredevents_icon"
+            android:title="@string/nav_hot_events" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/tabbar_events_icon"
+            android:title="@string/nav_events" />
+        <item
+            android:id="@+id/nav_mytickets"
+            android:icon="@drawable/tabbar_mytickets_icon"
+            android:title="@string/nav_my_tickets" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/tabbar_support_icon"
+            android:title="@string/nav_support" />
+
+    </group>
+
+    <group android:id="@+id/nav_group2" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_code"
+            android:icon="@drawable/event_cell_lock_icon_small"
+            android:title="@string/nav_enter_ambassador_code" />
+        <item
+                android:id="@+id/nav_logout"
+            android:title="@string/nav_logout"/>
+
+        <item
+            android:id="@+id/nav_login"
+            android:visible="false"
+            android:title="@string/nav_login"/>
+    </group>
+
+</menu>
